@@ -32,3 +32,9 @@ dnf5 install -y \
 
 ## Multimedia apps which will rely on freeworld packages
 dnf5 install -y vlc
+
+## Steam requires non-free
+dnf5 install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm \
+  https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+
+dnf5 install -y steam

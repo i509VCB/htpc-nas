@@ -9,7 +9,6 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 FLATPAKS=(
   com.usebottles.bottles
-  com.valvesoftware.Steam
   org.kde.elisa
   org.mozilla.firefox
 )
